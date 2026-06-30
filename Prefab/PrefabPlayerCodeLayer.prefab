@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9169428163368820238
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7179277140304780612}
+  - component: {fileID: 8547177459155055534}
+  - component: {fileID: 4898994248152927968}
+  m_Layer: 0
+  m_Name: PrefabPlayerCodeLayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7179277140304780612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9169428163368820238}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8547177459155055534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9169428163368820238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 202d4f33710f56346b146933476d5c7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.tbiolayer.Runtime::Eloi.TBIO.TextByteInOutLayerMono
+  m_onByteSendToServer:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onTextSendToServer:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onByteReceivedFromServer:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onTextReceivedFromServer:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4898994248152927968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9169428163368820238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22bacca926e95fd4b8a38d1cbf942061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: be.elab.tbiolayer.Runtime::Eloi.TBIO.SendReceivedTextByteInOutMono
+  m_textByteInOutLayer: {fileID: 8547177459155055534}
+  m_sendTextToServer: 
+  m_sendByteToServer: 
+  m_receiveTextFromServer: 
+  m_receiveByteFromServer: 
